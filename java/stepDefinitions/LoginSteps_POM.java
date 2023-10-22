@@ -15,7 +15,6 @@ import static page_objects.LoginPage.enterEmail;
 import static page_objects.LoginPage.enterPassword;
 import static page_objects.LoginPage.btnclick;
 import static page_objects.LoginPage.checkLogoutLink;
-//import static page_objects.LoginPage.checkforgotPswdLink;
 import static page_objects.LoginPage.getForgotPwdPageUrl;
 import static page_objects.LoginPage.clickforgotPswdLink;
 
