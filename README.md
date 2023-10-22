@@ -1,10 +1,9 @@
 # CucumberTestAuto
-mini projet selenium Cucumbr java  BDD  
+mini projet selenium Cucumbr java  BDD , executé avec Junit
+
 
 Prérequis:
- - Java ou Maven
- - executé avec Junit
-
+ - Java ou Maven   
 
 
 
