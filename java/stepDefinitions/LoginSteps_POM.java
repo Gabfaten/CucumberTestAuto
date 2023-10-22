@@ -18,8 +18,6 @@ import static page_objects.LoginPage.checkLogoutLink;
 import static page_objects.LoginPage.getForgotPwdPageUrl;
 import static page_objects.LoginPage.clickforgotPswdLink;
 
-import java.util.concurrent.TimeUnit;
-
 
 public class LoginSteps_POM {	
 	
