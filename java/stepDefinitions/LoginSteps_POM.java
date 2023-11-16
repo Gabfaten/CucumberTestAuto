@@ -3,23 +3,21 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
-import org.openqa.selenium.By;
-
-import dev.failsafe.internal.util.Assert;
-
 import static modules.Hooks.driver;
-import page_objects.LoginPage;
-
 import static page_objects.LoginPage.enterEmail;
 import static page_objects.LoginPage.enterPassword;
 import static page_objects.LoginPage.btnclick;
 import static page_objects.LoginPage.checkLogoutLink;
 import static page_objects.LoginPage.getForgotPwdPageUrl;
 import static page_objects.LoginPage.clickforgotPswdLink;
+import utils.BrowserFactory;
 
 
-public class LoginSteps_POM {	
+public class LoginSteps_POM extends BrowserFactory {
+	
+	//read properties from config properties 
+	static String prop_email    = configurationMap.get("valid-email");	
+	static String prop_password = configurationMap.get("valid-password");
 	
 	@Given("I am on the OpenCart login page")
 	public void i_am_on_the_open_cart_login_page() {		
@@ -30,8 +28,8 @@ public class LoginSteps_POM {
 	@Given("I have entered a valid username and password")
 	public void i_have_entered_a_valid_username_and_password() {
 		System.out.print("I am in enter a valid username and  password-----\n"); 
-		enterEmail("gabouch.faten@gmail.com");
-		enterPassword("07346529Ff");		 
+		enterEmail(prop_email);
+		enterPassword(prop_password); 
 	}
 	
 	@When("I click on the login button")
