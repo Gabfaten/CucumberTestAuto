@@ -18,13 +18,13 @@ public class BrowserFactory {
 
 	public static WebDriver getFactoryDriver() {
 			
-	  if(webBrowserType.equalsIgnoreCase("chrome") ) {
-		 System.setProperty("webdriver.chrome.driver", "C:\\Users\\SAMSUNG\\eclipse-workspace\\TestAuto\\src\\test\\resources\\drivers\\chromedriver.exe");
-		 factoryDriver = new ChromeDriver();
+	  if(webBrowserType.equalsIgnoreCase("chrome") ) {		
+		  System.setProperty("webdriver.chrome.driver", ".\\src\\test\\resources\\drivers\\chromedriver.exe");
+		  factoryDriver = new ChromeDriver();
 	}
-	   else if (webBrowserType.equalsIgnoreCase("firefox") ) {
-			System.setProperty("webdriver.gecko.driver","C:\\Users\\SAMSUNG\\eclipse-workspace\\TestAuto\\src\\test\\resources\\drivers\\geckodriver.exe");				
-			factoryDriver =  new FirefoxDriver();
+	   else if (webBrowserType.equalsIgnoreCase("firefox") ) {						
+			 System.setProperty("webdriver.gecko.driver", ".\\src\\test\\resources\\drivers\\geckodriver.exe");
+		         factoryDriver =  new FirefoxDriver();
 		}	
 	  
 	  return factoryDriver;
