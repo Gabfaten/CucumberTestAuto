@@ -13,8 +13,7 @@ public class BrowserFactory {
 	public static final HashMap<String, String> configurationMap = 
 			PropertiesFile.read("src/test/resources/environment/config.properties");
 	
-	static String webBrowserType = configurationMap.get("browser");	
-	
+	static String webBrowserType = configurationMap.get("browser");		
 
 	public static WebDriver getFactoryDriver() {
 			
